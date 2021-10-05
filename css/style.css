@@ -27,6 +27,12 @@ body {
   font-family: roboto, sans-serif;
   color: var(--main-text-color);
 }
+
+/* контейнер шапки------------ */
+.container {
+  width: 1170px;
+  outline: 2px solid tomato;
+}
 /* лого */
 .logo {
   font-family: raleway, sans-serif;
@@ -67,6 +73,10 @@ body {
   letter-spacing: 0.02em;
   list-style: none;
 }
+.list {
+  padding: 0;
+  margin: 0;
+}
 .contacts-item {
   color: var(--main-text-color);
   text-decoration: none;
@@ -79,8 +89,12 @@ body {
 }
 
 /* герой --------------------------------------*/
-
+.hero {
+  text-align: center;
+}
 .hero-titel {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -88,52 +102,82 @@ body {
   color: var(--title-text-color);
 }
 .button-hero {
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-color: transparent;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  letter-spacing: 0.06em;
+
   cursor: pointer;
 }
-/* секция ПРЕИМУЩЕСТВА страница "студия"------------- */
-.description-titel {
+
+/* секция ПРЕИМУЩЕСТВА(BENEFITS) страница "студия"------------- */
+.benefits-container {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+.titel-no-display {
   display: none;
 }
-.benefits-descriptions {
+
+.benefits {
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
-.description {
+.benefits-titel {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.description-text {
+.benefits-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
-/* секция ЧЕМ МЫ ЗАНИМАЕМСЯ страница "студия"--------- */
-.jobs {
+/* секция ЧЕМ МЫ ЗАНИМАЕМСЯ(Jobs) страница "студия"--------- */
+
+.jobs-titel {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-text-color);
 }
+
 .jobs-list {
   list-style: none;
 }
-/* секция команда страница "студия" --------------------*/
 
-.team {
+/* секция команда(Team) страница "студия" --------------------*/
+
+.team-titel {
+  margin-top: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-text-color);
 }
+
 .team-list {
   list-style: none;
 }
@@ -148,6 +192,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
 }
+
 /* футер--------------------------------------------------- */
 
 .address {
