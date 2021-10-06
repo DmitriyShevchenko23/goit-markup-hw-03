@@ -163,6 +163,8 @@ body {
 }
 
 .jobs-list {
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -170,6 +172,7 @@ body {
 
 .team-titel {
   margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -179,9 +182,13 @@ body {
 }
 
 .team-list {
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -222,6 +229,8 @@ body {
   display: none;
 }
 .buttons {
+  margin-top: 0;
+  margin-bottom: 34px;
   list-style: none;
 }
 
@@ -241,10 +250,16 @@ body {
 }
 
 /* СЕКЦИЯ портфолио ---------------------------------------*/
+.portfolio {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .portfolio-item {
   list-style: none;
 }
 .portfolio-titel {
+  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
