@@ -50,6 +50,10 @@ body {
 .nav {
 }
 .nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.nav-item {
   list-style: none;
 }
 
@@ -66,7 +70,9 @@ body {
   color: var(--accent-color);
 }
 /* почта+телефон -----------------------------*/
-.nav-contacts {
+.contacts-list {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -203,6 +209,10 @@ body {
 /* футер--------------------------------------------------- */
 
 .address {
+}
+.address-list {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .address-item {
   list-style: none;
