@@ -39,7 +39,6 @@ body {
 }
 /* лого */
 .nav-logo {
-  display: block;
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -154,9 +153,13 @@ body {
 }
 
 .benefits-list {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+}
+.benefits-list .benefits-item + .benefits-item {
+  margin-left: 30px;
 }
 .benefits-titel {
   margin-top: 0;
@@ -190,9 +193,13 @@ body {
 }
 
 .jobs-list {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+}
+.jobs-list .jobs-item + .jobs-item {
+  margin-left: 30px;
 }
 
 /* секция команда(Team) страница "студия" --------------------*/
@@ -209,9 +216,13 @@ body {
 }
 
 .team-list {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+}
+.team-list .team-item + .team-item {
+  margin-left: 30px;
 }
 .team-name {
   margin-top: 30px;
@@ -255,17 +266,27 @@ body {
 /* СТРАНИЦА портфолио ----------------------------------*/
 
 /* кнопки навигации */
-
+.filters-section {
+  margin-top: 94px;
+}
 .filters-titel {
   display: none;
 }
 .buttons-list {
+  display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 34px;
   list-style: none;
 }
-
+.buttons-list .buttons-item + .buttons-item {
+  margin-left: 8px;
+}
+.buttons-item {
+}
 .filter-btn {
+  border: transparent;
+  border-radius: 4px;
   font-family: roboto, sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -274,6 +295,7 @@ body {
   background-color: var(--bg-white-color);
   cursor: pointer;
 }
+
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--primary-white-color);
