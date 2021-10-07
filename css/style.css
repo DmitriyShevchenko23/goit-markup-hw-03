@@ -61,8 +61,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 93px;
-
-  outline: 2px solid tomato;
 }
 .nav-list .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -82,7 +80,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
-  outline: 2px solid tomato;
 }
 .link:hover,
 .link:focus {
@@ -101,7 +98,6 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   list-style: none;
-  outline: 2px solid tomato;
 }
 .nav-contacts .contacts-item + .contacts-item {
   margin-left: 50px;
@@ -113,7 +109,6 @@ body {
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.03em;
-  outline: 2px solid tomato;
 }
 .contacts-link:hover,
 .contacts-link:focus {
