@@ -81,8 +81,8 @@ body {
   color: var(--title-text-color);
   text-decoration: none;
 }
-.link:hover,
-.link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 /* почта+телефон -----------------------------*/
@@ -274,8 +274,8 @@ body {
   background-color: var(--bg-white-color);
   cursor: pointer;
 }
-.filter-button:hover,
-.filter-button:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
