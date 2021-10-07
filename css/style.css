@@ -30,11 +30,16 @@ body {
 
 /* контейнер шапки------------ */
 .container {
-  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 215px;
+  padding-right: 215px;
+  width: 1200px;
   outline: 2px solid tomato;
 }
 /* лого */
 .logo {
+  display: block;
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -48,49 +53,70 @@ body {
 }
 /* навигация -----------------------------*/
 .nav {
+  display: flex;
+  align-items: center;
 }
 .nav-list {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 93px;
+
+  outline: 2px solid tomato;
+}
+.nav-list .nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 .nav-item {
   list-style: none;
 }
 
 .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  outline: 2px solid tomato;
 }
 .link:hover,
 .link:focus {
   color: var(--accent-color);
 }
 /* почта+телефон -----------------------------*/
-.contacts-list {
+.nav-contacts {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
+  margin-left: auto;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   list-style: none;
+  outline: 2px solid tomato;
 }
-.list {
-  padding: 0;
-  margin: 0;
+.nav-contacts .contacts-item + .contacts-item {
+  margin-left: 50px;
 }
-.contacts-item {
+
+.contacts-link {
+  display: block;
   color: var(--main-text-color);
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.03em;
+  outline: 2px solid tomato;
 }
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
