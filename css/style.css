@@ -28,22 +28,46 @@ body {
   font-family: roboto, sans-serif;
   color: var(--main-text-color);
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
-/* контейнер шапки------------ */
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  outline: 2px solid tomato;
 }
-/* лого */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.current {
+  color: var(--accent-color);
+}
+/* шапка-----------*/
 .header {
+  border-bottom: 1px solid #eeeeee;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
-  padding-left: 15px;
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -62,10 +86,7 @@ body {
 }
 .nav-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
   margin-left: 93px;
-  padding: 0;
 }
 .nav-list .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -93,9 +114,6 @@ body {
 /* почта+телефон -----------------------------*/
 .nav-contacts {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
   margin-left: auto;
 
   font-weight: 500;
@@ -122,9 +140,12 @@ body {
 }
 
 /* герой --------------------------------------*/
-.hero {
+.hero-section {
   text-align: center;
   background-color: var(--dark-bg-color);
+}
+.container-hero {
+  padding: 200px 0;
 }
 .hero-titel {
   margin-top: 0;
@@ -149,25 +170,22 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-
   cursor: pointer;
 }
 
 /* секция ПРЕИМУЩЕСТВА(BENEFITS) страница "студия"------------- */
-.benefits-container {
-  margin-top: 94px;
-  margin-bottom: 94px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
-.titel-no-display {
-  display: none;
-}
-
 .benefits-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0 15px;
-  list-style: none;
 }
 .benefits-list .benefits-item + .benefits-item {
   margin-left: 30px;
@@ -193,7 +211,9 @@ body {
 }
 
 /* секция ЧЕМ МЫ ЗАНИМАЕМСЯ(Jobs) страница "студия"--------- */
-
+.jobs-section {
+  padding-top: 0;
+}
 .jobs-titel {
   margin-top: 0;
   margin-bottom: 50px;
@@ -205,20 +225,21 @@ body {
   text-align: center;
   color: var(--title-text-color);
 }
-
 .jobs-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0 15px;
-  list-style: none;
 }
 .jobs-list .jobs-item + .jobs-item {
   margin-left: 30px;
 }
 
 /* секция команда(Team) страница "студия" --------------------*/
-
+.team-section {
+  background-color: var(--bg-white-color);
+}
+.team-card {
+  padding: 30px 0;
+  background-color: var(--primary-white-color);
+}
 .team-titel {
   margin-top: 0;
   margin-bottom: 50px;
@@ -230,27 +251,26 @@ body {
   text-align: center;
   color: var(--title-text-color);
 }
-
 .team-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
   padding: 0 15px;
-  list-style: none;
 }
 .team-list .team-item + .team-item {
   margin-left: 30px;
 }
+.team-item {
+  border-radius: 0px 0px 4px 4px;
+}
 .team-name {
-  margin-top: 30px;
   margin-bottom: 10px;
-
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   color: var(--title-text-color);
 }
 .team-position {
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -258,14 +278,12 @@ body {
 
 /* футер--------------------------------------------------- */
 .page-footer {
+  padding: 60px 0;
   background-color: #2f303a;
 }
 .footer-logo {
   display: block;
-  padding-left: 15px;
-  padding-top: 60px;
-  padding-bottom: 20px;
-
+  margin-bottom: 20px;
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -274,23 +292,14 @@ body {
   color: var(--bg-white-color);
   text-decoration: none;
 }
-.address {
-}
 .address-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 15px;
+}
+.address-list .address-item + .address-item {
+  margin-top: 9px;
 }
 .address-item {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  list-style: none;
 }
-
 .address-link {
-  margin-top: 20px;
-  margin-bottom: 9px;
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -304,20 +313,14 @@ body {
 }
 
 /* СТРАНИЦА портфолио ----------------------------------*/
-
 /* кнопки навигации */
 .filters-section {
   margin-top: 94px;
 }
-.filters-titel {
-  display: none;
-}
 .buttons-list {
   display: flex;
   justify-content: center;
-  margin-top: 0;
   margin-bottom: 34px;
-  padding: 0 15px;
   list-style: none;
 }
 .buttons-list .buttons-item + .buttons-item {
@@ -327,9 +330,12 @@ body {
 }
 .filter-btn {
   border: transparent;
+  padding: 6px 22px;
   border-radius: 4px;
+  height: 38px;
 
   font-family: roboto, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -337,7 +343,6 @@ body {
   background-color: var(--bg-white-color);
   cursor: pointer;
 }
-
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--primary-white-color);
@@ -348,15 +353,14 @@ body {
 .portfolio-list {
   display: inline-flex;
   flex-wrap: wrap;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0 15px;
 }
 .portfolio-item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  list-style: none;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
@@ -364,11 +368,11 @@ body {
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
+.portfolio-card {
+  padding: 20px 24px;
+}
 .portfolio-titel {
-  margin-top: 20px;
   margin-bottom: 4px;
-  padding: 0 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -377,6 +381,5 @@ body {
   color: var(--title-text-color);
 }
 .portfolio-text {
-  padding: 0 24px;
   letter-spacing: 0.03em;
 }
