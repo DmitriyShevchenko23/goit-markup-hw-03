@@ -141,11 +141,11 @@ img {
 
 /* герой --------------------------------------*/
 .hero-section {
+  padding: 200px 0;
   text-align: center;
   background-color: var(--dark-bg-color);
 }
 .container-hero {
-  padding: 200px 0;
 }
 .hero-titel {
   margin-top: 0;
@@ -253,7 +253,6 @@ img {
 }
 .team-list {
   display: flex;
-  padding: 0 15px;
 }
 .team-list .team-item + .team-item {
   margin-left: 30px;
